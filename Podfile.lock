@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (3.2.1)
+  - Bond (4.3.0)
+  - Firebase (2.5.1)
+  - FirebaseUI/Core (0.3.2):
+    - Firebase (~> 2.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.1)
+  - Bond (~> 4.0)
+  - Firebase (~> 2.5)
+  - FirebaseUI/Core (~> 0.3)
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  Bond: ebe2364b18130690083cbceff036420b21494ae4
+  Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
+  FirebaseUI: 95621dce04f0313495c86e1fba503254e0ec48b1
+
+COCOAPODS: 0.39.0
