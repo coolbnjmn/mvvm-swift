@@ -15,6 +15,16 @@
 		B245E5BA1C8965880032437C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B245E5B61C8965880032437C /* Assets.xcassets */; };
 		B245E5BB1C8965880032437C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B245E5B71C8965880032437C /* Info.plist */; };
 		B245E5BD1C89659A0032437C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5BC1C89659A0032437C /* ViewController.swift */; };
+		B245E5C11C896AAB0032437C /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5C01C896AAB0032437C /* FirebaseController.swift */; };
+		B245E5C31C896C060032437C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5C21C896C060032437C /* BaseModel.swift */; };
+		B245E5C51C896C170032437C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5C41C896C170032437C /* UserModel.swift */; };
+		B245E5C71C896CD60032437C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5C61C896CD60032437C /* LoginViewController.swift */; };
+		B245E5CA1C896D5A0032437C /* LoginTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5C81C896D5A0032437C /* LoginTextFieldTableViewCell.swift */; };
+		B245E5CB1C896D5A0032437C /* LoginTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B245E5C91C896D5A0032437C /* LoginTextFieldTableViewCell.xib */; };
+		B245E5CE1C896E0A0032437C /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5CD1C896E0A0032437C /* UITextField+.swift */; };
+		B245E5D01C8970C30032437C /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5CF1C8970C30032437C /* UITableView+.swift */; };
+		B245E5D31C89718F0032437C /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5D21C89718F0032437C /* BaseProvider.swift */; };
+		B245E5D51C8971A20032437C /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5D41C8971A20032437C /* LoginProvider.swift */; };
 		DD83024AEC4B0AB45511A4F2 /* Pods_mvvm_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61B3A766AFE383F8D5B0B9A /* Pods_mvvm_swiftTests.framework */; };
 		E7B5980AC8F2DD84113394D4 /* Pods_mvvm_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E1F0B3AF84F7984B722B2D /* Pods_mvvm_swiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +65,16 @@
 		B245E5B71C8965880032437C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Core/Info.plist; sourceTree = "<group>"; };
 		B245E5B81C8965880032437C /* mvvm-swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "mvvm-swift-Bridging-Header.h"; path = "Core/mvvm-swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		B245E5BC1C89659A0032437C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewControllers/ViewController.swift; sourceTree = "<group>"; };
+		B245E5C01C896AAB0032437C /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseController.swift; path = Controllers/FirebaseController.swift; sourceTree = "<group>"; };
+		B245E5C21C896C060032437C /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseModel.swift; path = Models/BaseModel.swift; sourceTree = "<group>"; };
+		B245E5C41C896C170032437C /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = Models/UserModel.swift; sourceTree = "<group>"; };
+		B245E5C61C896CD60032437C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		B245E5C81C896D5A0032437C /* LoginTextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginTextFieldTableViewCell.swift; path = Views/LoginTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		B245E5C91C896D5A0032437C /* LoginTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginTextFieldTableViewCell.xib; path = Views/LoginTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		B245E5CD1C896E0A0032437C /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextField+.swift"; path = "Core/Utilities/UITextField+.swift"; sourceTree = "<group>"; };
+		B245E5CF1C8970C30032437C /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+.swift"; path = "Core/UITableView+.swift"; sourceTree = "<group>"; };
+		B245E5D21C89718F0032437C /* BaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseProvider.swift; path = Providers/BaseProvider.swift; sourceTree = "<group>"; };
+		B245E5D41C8971A20032437C /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginProvider.swift; path = Providers/LoginProvider.swift; sourceTree = "<group>"; };
 		CC769C98D04A4FE472C6C93E /* Pods-mvvm-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvm-swiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mvvm-swiftUITests/Pods-mvvm-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E25154351268087CCCE0F56A /* Pods_mvvm_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61B3A766AFE383F8D5B0B9A /* Pods_mvvm_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,10 +157,12 @@
 		B245E57D1C8962DB0032437C /* mvvm-swift */ = {
 			isa = PBXGroup;
 			children = (
+				B245E5D11C89716F0032437C /* Providers */,
 				B245E5B41C8964F20032437C /* Models */,
 				B245E5B31C8964E80032437C /* Views */,
 				B245E5B21C8964DC0032437C /* ViewModels */,
 				B245E5B11C8964CC0032437C /* ViewControllers */,
+				B245E5BF1C896A8A0032437C /* Controllers */,
 				B245E5B01C8964C60032437C /* Core */,
 			);
 			path = "mvvm-swift";
@@ -167,6 +189,7 @@
 		B245E5B01C8964C60032437C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B245E5CC1C896DCB0032437C /* Utilities */,
 				B245E5B51C8965880032437C /* AppDelegate.swift */,
 				B245E5B61C8965880032437C /* Assets.xcassets */,
 				B245E5B71C8965880032437C /* Info.plist */,
@@ -179,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				B245E5BC1C89659A0032437C /* ViewController.swift */,
+				B245E5C61C896CD60032437C /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				B245E5821C8962DB0032437C /* Main.storyboard */,
+				B245E5C81C896D5A0032437C /* LoginTextFieldTableViewCell.swift */,
+				B245E5C91C896D5A0032437C /* LoginTextFieldTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -201,8 +227,36 @@
 		B245E5B41C8964F20032437C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B245E5C21C896C060032437C /* BaseModel.swift */,
+				B245E5C41C896C170032437C /* UserModel.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B245E5BF1C896A8A0032437C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B245E5C01C896AAB0032437C /* FirebaseController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B245E5CC1C896DCB0032437C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B245E5CD1C896E0A0032437C /* UITextField+.swift */,
+				B245E5CF1C8970C30032437C /* UITableView+.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		B245E5D11C89716F0032437C /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				B245E5D21C89718F0032437C /* BaseProvider.swift */,
+				B245E5D41C8971A20032437C /* LoginProvider.swift */,
+			);
+			name = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B245E5BA1C8965880032437C /* Assets.xcassets in Resources */,
+				B245E5CB1C896D5A0032437C /* LoginTextFieldTableViewCell.xib in Resources */,
 				B245E5841C8962DB0032437C /* Main.storyboard in Resources */,
 				B245E5BB1C8965880032437C /* Info.plist in Resources */,
 			);
@@ -467,8 +522,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B245E5C71C896CD60032437C /* LoginViewController.swift in Sources */,
+				B245E5D51C8971A20032437C /* LoginProvider.swift in Sources */,
+				B245E5C11C896AAB0032437C /* FirebaseController.swift in Sources */,
 				B245E5BD1C89659A0032437C /* ViewController.swift in Sources */,
+				B245E5D01C8970C30032437C /* UITableView+.swift in Sources */,
+				B245E5C31C896C060032437C /* BaseModel.swift in Sources */,
+				B245E5CA1C896D5A0032437C /* LoginTextFieldTableViewCell.swift in Sources */,
+				B245E5C51C896C170032437C /* UserModel.swift in Sources */,
 				B245E5B91C8965880032437C /* AppDelegate.swift in Sources */,
+				B245E5CE1C896E0A0032437C /* UITextField+.swift in Sources */,
+				B245E5D31C89718F0032437C /* BaseProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,13 +665,13 @@
 			baseConfigurationReference = 2E0CF11A3EAD73BFD96C9EFC /* Pods-mvvm-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "mvvm-swift/Info.plist";
+				INFOPLIST_FILE = "mvvm-swift/Core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "coolbnjmn.mvvm-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "mvvm-swift/mvvm-swift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "mvvm-swift/Core/mvvm-swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -617,13 +681,13 @@
 			baseConfigurationReference = 17FAB22836B8E316334CFE2D /* Pods-mvvm-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "mvvm-swift/Info.plist";
+				INFOPLIST_FILE = "mvvm-swift/Core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "coolbnjmn.mvvm-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "mvvm-swift/mvvm-swift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "mvvm-swift/Core/mvvm-swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
