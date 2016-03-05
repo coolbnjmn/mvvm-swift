@@ -9,6 +9,9 @@ def shared_pods
   pod 'Firebase', '~> 2.5'
   pod 'FirebaseUI/Core', '~> 0.3'
   pod 'Bond', '~> 4.0'
+  pod 'SVProgressHUD'
+  pod 'OHHTTPStubs/Swift'
+  pod 'OHHTTPStubs'
 end
 
 target 'mvvm-swift' do

@@ -39,6 +39,9 @@ extension LoginViewController : BaseProviderViewControllerDelegate {
                 password = loginProvider.password {
                     FirebaseController.sharedInstance.loginUser(username, password: password, completion: {
                         success in
+                        if success {
+                            self.performSegueWithIdentifier(StoryboardSegues.ShowViewController.rawValue, sender: self)
+                        }
                     })
             }
             case .RightButtonTap:

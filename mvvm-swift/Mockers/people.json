@@ -1,0 +1,68 @@
+{
+    "people":[
+              {
+              "firstName": "Frodo",
+              "occupation": "Jewelery Repossession in Middle Earth",
+              "id": "1",
+              "lastName": "Baggins",
+              "imageUrl": "http://aidanmoher.com/blog/wp-content/uploads/2011/11/Frodo-Baggins-frodo-7808556-400-300.jpg"
+              },
+              {
+              "firstName": "Samwise",
+              "occupation": "Frodo's gardener; becomes Frodo's companion on the quest.",
+              "id": "2",
+              "lastName": "Gangee",
+              "imageUrl": "http://vignette3.wikia.nocookie.net/lotr/images/4/45/Samwise2.jpg"
+              },
+              {
+              "firstName": "Gandalf",
+              "occupation": "Wizard who leads the Fellowship until he falls from the Bridge of Khazad-dûm, in Moria fighting a Balrog of Morgoth.",
+              "id": "3",
+              "lastName": "the Grey",
+              "imageUrl": "http://vignette2.wikia.nocookie.net/lotr/images/8/8d/Gandalf-2.jpg"
+              },
+              {
+              "firstName": "Legolas",
+              "occupation": "Badass Elf",
+              "id": "4",
+              "lastName": "",
+              "imageUrl": "http://vignette4.wikia.nocookie.net/lotr/images/9/95/Legolask.jpg"
+              },
+              {
+              "firstName": "Gimli",
+              "occupation": "Badass Dwarf",
+              "id": "5",
+              "lastName": "Son of Gloìn",
+              "imageUrl": "http://vignette1.wikia.nocookie.net/lotr/images/e/ec/Gimli_-_FOTR.png"
+              },
+              {
+              "firstName": "Aragorn",
+              "occupation": "King of Men",
+              "id": "6",
+              "lastName": "AKA Strider",
+              "imageUrl": "http://vignette1.wikia.nocookie.net/lotr/images/c/cc/Aragorn_Close_up_-_FOTR.png"
+              },
+              {
+              "firstName": "Boromir",
+              "occupation": "Steward's Son",
+              "id": "7",
+              "lastName": "",
+              "imageUrl": "http://vignette1.wikia.nocookie.net/lotr/images/d/dc/BoromirBean.jpg"
+              },
+              {
+              "firstName": "Meriadoc",
+              "occupation": "aka Merry",
+              "id": "8",
+              "lastName": "Brandibuc",
+              "imageUrl": "http://vignette1.wikia.nocookie.net/lotr/images/7/75/0006AC40-2CAA-1FD7-8DAB80C328EC0000.jpg"
+              },
+              {
+              "firstName": "Peregrin",
+              "occupation": "aka Pippin",
+              "id": "9",
+              "lastName": "Took",
+              "imageUrl": "http://vignette1.wikia.nocookie.net/lotr/images/4/4b/Pippin.jpg"
+              }
+
+    ]
+}

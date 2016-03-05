@@ -45,6 +45,7 @@
                     <constraint firstItem="yci-9B-Z98" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="pX0-Qa-d49"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="leftButton" destination="Qy8-Ov-JZs" id="Df6-nu-H84"/>
                 <outlet property="rightButton" destination="yci-9B-Z98" id="SYj-FM-D7w"/>

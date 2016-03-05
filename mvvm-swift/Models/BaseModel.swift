@@ -8,6 +8,9 @@
 
 import UIKit
 
+enum BaseModelKeys : String {
+    case id = "id"
+}
 class BaseModel: NSObject {
     var id: Int
     

@@ -16,3 +16,7 @@ enum AppControlEvents {
     case RightButtonTap
     case LeftButtonTap
 }
+
+enum StoryboardSegues: String {
+    case ShowViewController = "storyboardShowViewController"
+}
