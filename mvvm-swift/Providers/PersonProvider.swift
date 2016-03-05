@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import OHHTTPStubs
-import Bond
+import SDWebImage
 
 class PersonProvider: BaseProvider {
     
@@ -54,20 +54,24 @@ class PersonProvider: BaseProvider {
 
 extension PersonProvider : UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(self.dataSource.count)
         return self.dataSource.count
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 80
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(indexPath: indexPath) as ImageHeaderSubheaderTableViewCell
         if let person = PersonModel(modelJSON: self.dataSource[indexPath.row]) {
             let personViewModel = PersonImageHeaderCellViewModel(model: person)
-            personViewModel.header
-                .map { $0 }
-                .bindTo(cell.headerLabel.bnd_text)
-            personViewModel.subHeader
-                .map { $0 }
-                .bindTo(cell.subHeaderLabel.bnd_text)
-            
+            cell.headerLabel.text = personViewModel.header
+            cell.subHeaderLabel.text = personViewModel.subHeader
+            cell.cellImageView.sd_setImageWithURL(personViewModel.imageUrl, completed: {
+                _,_,_,_ in
+                print(self)
+            })
         }
         return cell
     }

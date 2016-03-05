@@ -23,7 +23,7 @@ class ViewController: BaseViewController {
             self.tableView.delegate = dataProvider
             self.tableView.dataSource = dataProvider
         }
-        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight = 80
         tableView.registerReusableCell(ImageHeaderSubheaderTableViewCell.self)
         
     }

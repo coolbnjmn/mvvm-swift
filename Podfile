@@ -8,10 +8,10 @@ def shared_pods
   pod 'Alamofire', '~> 3.1'
   pod 'Firebase', '~> 2.5'
   pod 'FirebaseUI/Core', '~> 0.3'
-  pod 'Bond', '~> 4.0'
-  pod 'SVProgressHUD'
-  pod 'OHHTTPStubs/Swift'
   pod 'OHHTTPStubs'
+  pod 'OHHTTPStubs/Swift'
+  pod 'SDWebImage', '~>3.7'
+  pod 'SVProgressHUD'
 end
 
 target 'mvvm-swift' do

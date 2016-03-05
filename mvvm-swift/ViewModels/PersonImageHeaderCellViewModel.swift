@@ -11,15 +11,18 @@ import Bond
 
 class PersonImageHeaderCellViewModel: BaseViewModel {
 
-    var header: Observable<String> = Observable<String>("")
-    var subHeader: Observable<String> = Observable<String>("")
-    var imageUrl: Observable<NSURL?> = Observable<NSURL?>(nil)
+    var header: String
+    var subHeader: String
+    var imageUrl: NSURL?
     
     override init(model: BaseModel) {
         if let model = model as? PersonModel {
-            header.startWith(model.firstName + " " + model.lastName)
-            subHeader.startWith(model.occupation)
-            imageUrl.startWith(model.imageUrl)
+            header = model.firstName + " " + model.lastName
+            subHeader = model.occupation
+            imageUrl = model.imageUrl
+        } else {
+            header = ""
+            subHeader = ""
         }
         super.init(model: model)
     }
