@@ -8,6 +8,10 @@
 
 import UIKit
 
-class BaseProvider: NSObject {
+protocol BaseProviderViewControllerDelegate {
+    func controlEventHappened(controlEvent: AppControlEvents, sender: AnyObject)
+}
 
+class BaseProvider: NSObject {
+    var delegate : BaseProviderViewControllerDelegate?
 }

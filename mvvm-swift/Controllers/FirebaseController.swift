@@ -12,7 +12,7 @@ import Firebase
 class FirebaseController: NSObject {
     let fireRef = Firebase(url: "https://glowing-fire-1496.firebaseio.com/")
  
-    let sharedInstance : FirebaseController = FirebaseController()
+    static let sharedInstance : FirebaseController = FirebaseController()
     private override init() {} // Singleton, only internal init rights
     
     func createUser(name: String, password: String, completion: ((Bool)->Void)?) {
@@ -28,4 +28,17 @@ class FirebaseController: NSObject {
                 }
         })
     }
+    
+    func loginUser(name: String, password: String, completion: ((Bool)->Void)?) {
+        fireRef.authUser(name, password: password,
+            withCompletionBlock: { error, data in
+                if error != nil {
+                    // There was an error creating the account
+                    completion?(false)
+                } else {
+                    completion?(true)
+                }
+        })
+    }
+
 }

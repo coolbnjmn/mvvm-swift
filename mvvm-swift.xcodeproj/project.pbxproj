@@ -22,9 +22,14 @@
 		B245E5CA1C896D5A0032437C /* LoginTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5C81C896D5A0032437C /* LoginTextFieldTableViewCell.swift */; };
 		B245E5CB1C896D5A0032437C /* LoginTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B245E5C91C896D5A0032437C /* LoginTextFieldTableViewCell.xib */; };
 		B245E5CE1C896E0A0032437C /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5CD1C896E0A0032437C /* UITextField+.swift */; };
-		B245E5D01C8970C30032437C /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5CF1C8970C30032437C /* UITableView+.swift */; };
 		B245E5D31C89718F0032437C /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5D21C89718F0032437C /* BaseProvider.swift */; };
 		B245E5D51C8971A20032437C /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5D41C8971A20032437C /* LoginProvider.swift */; };
+		B245E5D71C89EB4D0032437C /* UIStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5D61C89EB4D0032437C /* UIStoryboard+.swift */; };
+		B245E5D91C89EB650032437C /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5D81C89EB650032437C /* UITableView+.swift */; };
+		B245E5DD1C89EBC80032437C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5DC1C89EBC80032437C /* BaseViewController.swift */; };
+		B245E5E01C89ED9D0032437C /* TwoButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5DE1C89ED9D0032437C /* TwoButtonTableViewCell.swift */; };
+		B245E5E11C89ED9D0032437C /* TwoButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B245E5DF1C89ED9D0032437C /* TwoButtonTableViewCell.xib */; };
+		B245E5E51C89F0F80032437C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E5E41C89F0F80032437C /* Constants.swift */; };
 		DD83024AEC4B0AB45511A4F2 /* Pods_mvvm_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61B3A766AFE383F8D5B0B9A /* Pods_mvvm_swiftTests.framework */; };
 		E7B5980AC8F2DD84113394D4 /* Pods_mvvm_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E1F0B3AF84F7984B722B2D /* Pods_mvvm_swiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -72,9 +77,14 @@
 		B245E5C81C896D5A0032437C /* LoginTextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginTextFieldTableViewCell.swift; path = Views/LoginTextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		B245E5C91C896D5A0032437C /* LoginTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginTextFieldTableViewCell.xib; path = Views/LoginTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		B245E5CD1C896E0A0032437C /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextField+.swift"; path = "Core/Utilities/UITextField+.swift"; sourceTree = "<group>"; };
-		B245E5CF1C8970C30032437C /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+.swift"; path = "Core/UITableView+.swift"; sourceTree = "<group>"; };
 		B245E5D21C89718F0032437C /* BaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseProvider.swift; path = Providers/BaseProvider.swift; sourceTree = "<group>"; };
 		B245E5D41C8971A20032437C /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginProvider.swift; path = Providers/LoginProvider.swift; sourceTree = "<group>"; };
+		B245E5D61C89EB4D0032437C /* UIStoryboard+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+.swift"; path = "Core/Utilities/UIStoryboard+.swift"; sourceTree = "<group>"; };
+		B245E5D81C89EB650032437C /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+.swift"; path = "Core/Utilities/UITableView+.swift"; sourceTree = "<group>"; };
+		B245E5DC1C89EBC80032437C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewControllers/BaseViewController.swift; sourceTree = "<group>"; };
+		B245E5DE1C89ED9D0032437C /* TwoButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoButtonTableViewCell.swift; path = Views/TwoButtonTableViewCell.swift; sourceTree = "<group>"; };
+		B245E5DF1C89ED9D0032437C /* TwoButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TwoButtonTableViewCell.xib; path = Views/TwoButtonTableViewCell.xib; sourceTree = "<group>"; };
+		B245E5E41C89F0F80032437C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Core/Utilities/Constants.swift; sourceTree = "<group>"; };
 		CC769C98D04A4FE472C6C93E /* Pods-mvvm-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvm-swiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mvvm-swiftUITests/Pods-mvvm-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E25154351268087CCCE0F56A /* Pods_mvvm_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61B3A766AFE383F8D5B0B9A /* Pods_mvvm_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +211,7 @@
 		B245E5B11C8964CC0032437C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B245E5DC1C89EBC80032437C /* BaseViewController.swift */,
 				B245E5BC1C89659A0032437C /* ViewController.swift */,
 				B245E5C61C896CD60032437C /* LoginViewController.swift */,
 			);
@@ -220,6 +231,8 @@
 				B245E5821C8962DB0032437C /* Main.storyboard */,
 				B245E5C81C896D5A0032437C /* LoginTextFieldTableViewCell.swift */,
 				B245E5C91C896D5A0032437C /* LoginTextFieldTableViewCell.xib */,
+				B245E5DE1C89ED9D0032437C /* TwoButtonTableViewCell.swift */,
+				B245E5DF1C89ED9D0032437C /* TwoButtonTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -244,8 +257,10 @@
 		B245E5CC1C896DCB0032437C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B245E5E41C89F0F80032437C /* Constants.swift */,
+				B245E5D81C89EB650032437C /* UITableView+.swift */,
 				B245E5CD1C896E0A0032437C /* UITextField+.swift */,
-				B245E5CF1C8970C30032437C /* UITableView+.swift */,
+				B245E5D61C89EB4D0032437C /* UIStoryboard+.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -374,6 +389,7 @@
 				B245E5BA1C8965880032437C /* Assets.xcassets in Resources */,
 				B245E5CB1C896D5A0032437C /* LoginTextFieldTableViewCell.xib in Resources */,
 				B245E5841C8962DB0032437C /* Main.storyboard in Resources */,
+				B245E5E11C89ED9D0032437C /* TwoButtonTableViewCell.xib in Resources */,
 				B245E5BB1C8965880032437C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,15 +538,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B245E5E01C89ED9D0032437C /* TwoButtonTableViewCell.swift in Sources */,
+				B245E5DD1C89EBC80032437C /* BaseViewController.swift in Sources */,
 				B245E5C71C896CD60032437C /* LoginViewController.swift in Sources */,
 				B245E5D51C8971A20032437C /* LoginProvider.swift in Sources */,
 				B245E5C11C896AAB0032437C /* FirebaseController.swift in Sources */,
+				B245E5E51C89F0F80032437C /* Constants.swift in Sources */,
 				B245E5BD1C89659A0032437C /* ViewController.swift in Sources */,
-				B245E5D01C8970C30032437C /* UITableView+.swift in Sources */,
 				B245E5C31C896C060032437C /* BaseModel.swift in Sources */,
 				B245E5CA1C896D5A0032437C /* LoginTextFieldTableViewCell.swift in Sources */,
 				B245E5C51C896C170032437C /* UserModel.swift in Sources */,
+				B245E5D71C89EB4D0032437C /* UIStoryboard+.swift in Sources */,
 				B245E5B91C8965880032437C /* AppDelegate.swift in Sources */,
+				B245E5D91C89EB650032437C /* UITableView+.swift in Sources */,
 				B245E5CE1C896E0A0032437C /* UITextField+.swift in Sources */,
 				B245E5D31C89718F0032437C /* BaseProvider.swift in Sources */,
 			);

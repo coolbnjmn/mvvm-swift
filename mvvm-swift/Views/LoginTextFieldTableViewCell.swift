@@ -18,6 +18,7 @@ class LoginTextFieldTableViewCell: UITableViewCell, Reusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = UIColor.clearColor()
         // Initialization code
     }
 

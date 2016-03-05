@@ -9,7 +9,26 @@
 import UIKit
 
 class LoginProvider: BaseProvider {
+    var username: String? {
+        get {
+            if let username = usernameTextField?.text {
+                return username
+            }
+            return nil
+        }
+    }
     
+    var password : String? {
+        get {
+            if let password = passwordTextField?.text {
+                return password
+            }
+            return nil
+        }
+    }
+    
+    var usernameTextField : PaddedTextField?
+    var passwordTextField : PaddedTextField?
 }
 
 extension LoginProvider : UITableViewDataSource {
@@ -22,26 +41,33 @@ extension LoginProvider : UITableViewDataSource {
         switch indexPath.row {
             case 0:
                 cell = UITableViewCell()
+                cell.backgroundColor = UIColor.clearColor()
                 return cell
             case 1:
                 let loginCell = tableView.dequeueReusableCell(indexPath: indexPath) as LoginTextFieldTableViewCell
                 loginCell.textField.placeholder = "USERNAME"
+                usernameTextField = loginCell.textField
                 cell = loginCell
                 return cell
             case 2:
                 let loginCell = tableView.dequeueReusableCell(indexPath: indexPath) as LoginTextFieldTableViewCell
                 loginCell.textField.placeholder = "PASSWORD"
                 loginCell.textField.secureTextEntry = true
+                passwordTextField = loginCell.textField
                 cell = loginCell
                 return cell
-            case 4:
-                cell = UITableViewCell()
+            case 3:
+                let buttonCell = tableView.dequeueReusableCell(indexPath: indexPath) as TwoButtonTableViewCell
+                buttonCell.leftButton.setTitle("LOGIN", forState: .Normal)
+                buttonCell.rightButton.setTitle("SIGN UP", forState: .Normal)
+                buttonCell.delegate = self
+                buttonCell.tag = 0
+                cell = buttonCell
                 return cell
             default:
                 cell = UITableViewCell()
                 print("ERROR, too many rows")
                 return cell
-                break
         }
     }
     
@@ -56,5 +82,19 @@ extension LoginProvider : UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    }
+}
+
+extension LoginProvider : TwoButtonCellDelegate {
+    func leftButtonPressed(cell: TwoButtonTableViewCell) {
+        if cell.tag == 0 {
+            delegate?.controlEventHappened(.LeftButtonTap, sender: cell)
+        }
+    }
+    
+    func rightButtonPressed(cell: TwoButtonTableViewCell) {
+        if cell.tag == 0 {
+            delegate?.controlEventHappened(.RightButtonTap, sender: cell)
+        }
     }
 }
